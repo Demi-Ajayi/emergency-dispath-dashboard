@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Incident Dashboard</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Emergency Incident Dashboard</h1>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Sidebar: Unit Availability -->
+      <aside class="sidebar">
+        <h2>Available Units</h2>
+        <table class="incident-list">
+          <thead>
+            <tr>
+              <th>Unit ID</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unit 1</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>Unit 2</td>
+              <td>Busy</td>
+            </tr>
+            <tr>
+              <td>Unit 3</td>
+              <td>En Route</td>
+            </tr>
+            <!-- Add more units here -->
+          </tbody>
+        </table>
+      </aside>
+
+      <!-- Content: Incident List -->
+      <section class="content">
+        <h2>Active Incidents</h2>
+
+        <!-- Filters -->
+        <div class="filters">
+          <label for="filter-priority">Filter by Priority:</label>
+          <select id="filter-priority">
+            <option value="all">All</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+
+          <label for="filter-status">Filter by Status:</label>
+          <select id="filter-status">
+            <option value="all">All</option>
+            <option value="reported">Reported</option>
+            <option value="in-progress">In Progress</option>
+            <option value="resolved">Resolved</option>
+          </select>
+
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by ID or Location"
+          />
+        </div>
+
+        <!-- Incident List Table -->
+        <table class="incident-list">
+          <thead>
+            <tr>
+              <th>Incident ID</th>
+              <th>Type</th>
+              <th>Priority</th>
+              <th>Location</th>
+              <th>Status</th>
+              <th>Reported Time</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#12345</td>
+              <td>Fire</td>
+              <td>High</td>
+              <td>123 Main St</td>
+              <td>Reported</td>
+              <td>10:32 AM</td>
+              <td><a href="#" class="btn">Dispatch Unit</a></td>
+            </tr>
+            <tr>
+              <td>#67890</td>
+              <td>Medical</td>
+              <td>Medium</td>
+              <td>456 Oak Rd</td>
+              <td>In Progress</td>
+              <td>9:15 AM</td>
+              <td><a href="#" class="btn">Dispatch Unit</a></td>
+            </tr>
+            <!-- Add more incidents here -->
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
