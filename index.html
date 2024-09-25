@@ -76,16 +76,16 @@
           />
         </div>
 
-        <!-- Incident List Table -->
+        <!-- Incident List Table with Sortable Headers -->
         <table class="incident-list">
           <thead>
             <tr>
-              <th>Incident ID</th>
-              <th>Type</th>
-              <th>Priority</th>
-              <th>Location</th>
-              <th>Status</th>
-              <th>Reported Time</th>
+              <th onclick="sortTable(0)">Incident ID</th>
+              <th onclick="sortTable(1)">Type</th>
+              <th onclick="sortTable(2)">Priority</th>
+              <th onclick="sortTable(3)">Location</th>
+              <th onclick="sortTable(4)">Status</th>
+              <th onclick="sortTable(5)">Reported Time</th>
               <th>Actions</th>
             </tr>
           </thead>

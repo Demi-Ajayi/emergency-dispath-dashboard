@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header {
   background-color: #4caf50;
   color: white;
@@ -54,35 +55,52 @@ header {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .content h2 {
   margin-top: 0;
 }
+
 .incident-list {
   width: 100%;
   border-collapse: collapse;
 }
+
 .incident-list th,
 .incident-list td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
+
 .incident-list th {
   background-color: #4caf50;
   color: white;
 }
+
+/* Sortable Table Styles */
+th {
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: #f1f1f1;
+}
+
 .filters,
 .actions {
   margin-bottom: 20px;
 }
+
 .filters label {
   margin-right: 10px;
 }
+
 .filters select,
 .filters input {
   padding: 5px;
   margin-right: 20px;
 }
+
 .btn {
   background-color: #4caf50;
   color: white;
@@ -90,6 +108,7 @@ header {
   text-decoration: none;
   border-radius: 5px;
 }
+
 .btn:hover {
   background-color: #45a049;
 }
