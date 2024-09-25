@@ -10,6 +10,33 @@ header {
   text-align: center;
   padding: 1em 0;
 }
+
+/* Status Indicator Styles */
+.status-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status-indicator p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.btn-refresh {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-refresh:hover {
+  background-color: #45a049;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
